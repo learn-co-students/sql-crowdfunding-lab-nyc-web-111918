@@ -7,15 +7,15 @@ Learn to create tables, insert data, and use `JOIN`s to answer the questions.
 In the `create.sql` file, model your tables. You should have a table for projects, users, and pledges.
 
 **Create a schema based on the following information:**
-- A project has a title, a category, a funding goal, a start date, and an end date.
-- A user has a name and an age
-- A pledge has an amount. It belongs to a user, and it also belongs to a project.
+- [ ] A project has a title, a category, a funding goal, a start date, and an end date.
+- [ ] A user has a name and an age
+- [ ] A pledge has an amount. It belongs to a user, and it also belongs to a project.
 
 ## Insert Records into Database
-Within the `insert.sql` file, insert 10 projects, 20 users, and 30 pledges into the database.
+- [ ] Within the `insert.sql` file, insert 10 projects, 20 users, and 30 pledges into the database.
 
 ## Queries
-Write the following queries in SQL. You'll use different kinds of SQL joins to arrive at the answers for most. Write your queries in the `lib/sql_queries` file like the example below:
+- Write the following queries in SQL. You'll use different kinds of SQL joins to arrive at the answers for most. Write your queries in the `lib/sql_queries` file like the example below:
 ```ruby
 def select_category_from_projects
   "SELECT category FROM projects;"
@@ -69,6 +69,15 @@ aisle	  SUM(quantity)
 2	           4
 3	           6
 ```
+
+## Deliverables?
+**Create a the following methods in lib/sql_queries**
+  - [ ] selects the titles of all projects and their pledge amounts alphabetized by name
+  - [ ] selects the user name age and pledge amount for all pledges alphabetized by name
+  - [ ] selects the titles and amount over goal of all projects that have met their funding goal
+  - [ ] selects user names and amounts of all pledges grouped by name then orders them by the amount and users name
+  - [ ] selects the category names and pledge amounts of all pledges in the music category
+  - [ ] selects the category name and the sum total of the all its pledges for the books category
 
 ## Resources
 * [Seldom Blog](http://blog.seldomatt.com/) - [About SQL Joins: The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
